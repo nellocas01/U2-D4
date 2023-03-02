@@ -4,37 +4,64 @@ body{
 }
 #container{
     background-color: #666666;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   margin-top: 25%;
+    width: 1536px; /* Added fixed width */
+    margin: 0 auto; /* Centered the container */
+    overflow: hidden; /* Added overflow property to contain floated elements */
+   margin-top: 2.5%;
 }
 .giallo{
     background-color: #dedfaf;
     margin: 20px;
+    float: left; /* Added float property */
+    width: 300px; /* Added fixed width */
+    height: 300px; /* Added fixed height */
     transform: rotate(352deg);
     transform-origin: bottom right;
    box-shadow: 2px 2px 5px;
-    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .verde{
     background-color: #b6d9b7;
     margin: 20px; 
+    float: left; /* Added float property */
+    width: 300px; /* Added fixed width */
+    height: 300px; /* Added fixed height */
     transform: rotate(6deg);
     transform-origin: bottom right;
     box-shadow: 2px 2px 5px;
-   
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 .viola{
     background-color: #b4b3cf;
-    margin: 20px;    
+    margin: 20px;   
+    float: left; /* Added float property */
+    width: 300px; /* Added fixed width */
+    height: 300px; /* Added fixed height */ 
     transform: rotate(345deg);
     transform-origin: bottom right;
    box-shadow: 2px 2px 5px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 h3{
     font-weight: bold;
+    font-size: 50px;
+}
+p{
+    font-size: 40px;
+
 }
 .giallo:hover,
 .verde:hover,

@@ -8,3 +8,21 @@
 7 ritardare progressivamente l'animazione delle altre 2 parole 
 */
 
+body{
+    background-color: black;
+    font-family: 'Bree Serif';
+}
+main{
+    background-color: white;
+    margin-top: 25%;
+}
+#testoAlternato{
+    border: black;
+}
+span{
+    color: #6a889c;
+    opacity: 0;
+}
+.parole{
+    transition-delay: 0.5s;
+}
