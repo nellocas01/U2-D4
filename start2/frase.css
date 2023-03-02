@@ -21,8 +21,49 @@ main{
 }
 span{
     color: #6a889c;
+}
+
+#testoAlternato .parole i {
+    display: inline-block;
+    position: absolute;
+  }
+  
+  #testoAlternato .parole i:nth-child(1) {
+    animation: frase 9s linear infinite;
+    animation-delay: 0s;
+  }
+
+  #testoAlternato .parole i:nth-child(2) {
+    animation: frase 9s linear infinite;
+    animation-delay: 3s;
+  }
+  
+  #testoAlternato .parole i:nth-child(3) {
+    animation: frase 9s linear infinite;
+    animation-delay: 6s;
+  }
+
+  @keyframes frase {
+    0% {
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    
+   10% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  33.3% {
     opacity: 0;
-}
-.parole{
-    transition-delay: 0.5s;
-}
+    transform: translateY(+30px);
+  }
+    100% {
+      opacity: 0;
+      transform: translateY(+30px);
+    }
+  }
+
